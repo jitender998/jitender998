@@ -1,0 +1,43 @@
+class Person {
+    private int age;
+    private String name;
+    private String address;
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+}
+
+class gettersetter {
+    public static void main(String[] args) {
+        Person pr = new Person();
+        pr.setAge(34);
+        pr.setName("rahul");
+        pr.setAddress("delhi");
+        System.out.println("the person age is: " + pr.getAge());
+        System.out.println("the person name is: " + pr.getName());
+        System.out.println("the person address is: " + pr.getAddress());
+
+    }
+
+}
