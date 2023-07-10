@@ -1,0 +1,29 @@
+
+interface Drawable {
+    double draw(double a, double b);
+}
+
+class Circle implements Drawable {
+    public double draw(double a, double b) {
+        return 3.14 * a * b;
+
+    }
+}
+
+class Rectangular implements Drawable {
+    public double draw(double a, double b) {
+        return a * b;
+
+    }
+}
+
+class OOPS1 {
+    public static void main(String[] args) {
+        Circle hr1 = new Circle();
+        Rectangular rc1 = new Rectangular();
+
+        System.out.println("area of circle is:- " + hr1.draw(4, 4));
+        System.out.println("area of rectangular is:- " + rc1.draw(8, 6));
+
+    }
+}
